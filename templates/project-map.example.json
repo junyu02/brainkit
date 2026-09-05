@@ -1,0 +1,8 @@
+{
+  "mappings": [
+    {
+      "localPath": "/absolute/path/to/example-project",
+      "vaultDir": "01-项目/example-project"
+    }
+  ]
+}

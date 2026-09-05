@@ -1,0 +1,32 @@
+{
+  "name": "brainkit",
+  "version": "0.1.0",
+  "description": "Zero-dependency tooling for a human-readable Second Brain vault",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "archive": "node scripts/cli/brain-archive.mjs",
+    "archive:aged": "node scripts/cli/brain-archive-aged.mjs",
+    "clip": "node scripts/cli/brain-clip.mjs",
+    "clip:review": "node scripts/cli/brain-clip.mjs review",
+    "clip:status": "node scripts/cli/brain-clip.mjs status",
+    "harvest": "node scripts/cli/brain-harvest.mjs",
+    "init": "node scripts/cli/brain-init.mjs",
+    "observe": "node scripts/cli/observe.mjs",
+    "publish": "node scripts/publish.mjs",
+    "publish:check": "node scripts/publish.mjs --check",
+    "query": "node scripts/cli/brain-query.mjs",
+    "test": "node tests/run-all.mjs",
+    "test:brain-write": "node --test tests/test-brain-write.mjs",
+    "test:plist-render": "node --test tests/test-plist-render.mjs",
+    "test:publish": "node --test tests/test-publish.mjs",
+    "verify": "node scripts/cli/brain-write.mjs --verify",
+    "watch": "node scripts/daemon/brain-watch.mjs",
+    "watch:stop": "node scripts/daemon/brain-watch.mjs stop",
+    "weekly": "node scripts/cli/brain-weekly.mjs"
+  },
+  "license": "MIT"
+}

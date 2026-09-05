@@ -1,0 +1,78 @@
+# Migration identity and baseline evidence are local-only. Do not remove them during migration.
+.brainkit-migration-id
+.migration-state/
+.test-tmp/
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.turbo/
+.parcel-cache/
+
+# Secrets and private configuration
+.env
+.env.*
+*.env
+!templates/*.env.example
+clip.env
+observe.env
+*.pem
+*.key
+
+# Runtime state and logs
+*.log
+logs/
+.index-cache/
+raw/
+attachments/
+assets/
+ERRORS.md
+publish-manifest.json
+publish.lock
+
+# Generated binaries and service files
+scripts/bin/brain-clip-helper
+*.plist
+!templates/*.plist.template
+
+# Backups, temp files, and iCloud conflicts
+*.bak
+*.bak-*
+*.tmp
+* 2.*
+* 3.*
+*conflicted copy*
+
+# Large media never belongs in this code repository
+*.mp4
+*.mov
+*.m4a
+*.qma
+
+# Fix-time gate receipts. Deliberately not committed: a receipt names the tree
+# hash it was produced against, and committing it would change that tree, so a
+# receipt can never live inside the commit it certifies. They are local evidence,
+# checked with `node tools/fixgate.mjs --verify <rev>`.
+.fixgate/
+
+# OS and editor state
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+# OMC keeps two unrelated things under .omc/. Its run state is disposable and
+# stays ignored. The design record -- the frozen spec, every review round, the
+# third-party diagnoses -- is a project asset: the spec was never in git at all,
+# so nothing could say when a clause changed or what it said before, and a
+# deleted gate could only be recovered from a diff that did not exist.
+.omc/state/
+.omc/artifacts/
+.omc/logs/
+.omc/research/
+.omc/notepad.md
+.omc/project-memory.json

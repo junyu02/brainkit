@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "source": "scripts/bin/brain-clip-helper.swift",
+      "target": "00-系统/scripts/bin/brain-clip-helper.swift"
+    },
+    {
+      "source": "scripts/cli/brain-archive-aged.mjs",
+      "target": "00-系统/scripts/cli/brain-archive-aged.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-archive.mjs",
+      "target": "00-系统/scripts/cli/brain-archive.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-clip.mjs",
+      "target": "00-系统/scripts/cli/brain-clip.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-harvest.mjs",
+      "target": "00-系统/scripts/cli/brain-harvest.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-index-summary.mjs",
+      "target": "00-系统/scripts/cli/brain-index-summary.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-init.mjs",
+      "target": "00-系统/scripts/cli/brain-init.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-query.mjs",
+      "target": "00-系统/scripts/cli/brain-query.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-sunday.mjs",
+      "target": "00-系统/scripts/cli/brain-sunday.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-status.mjs",
+      "target": "00-系统/scripts/cli/brain-status.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-weekly.mjs",
+      "target": "00-系统/scripts/cli/brain-weekly.mjs"
+    },
+    {
+      "source": "scripts/cli/brain-write.mjs",
+      "target": "00-系统/scripts/cli/brain-write.mjs"
+    },
+    {
+      "source": "scripts/cli/harvest-lib.mjs",
+      "target": "00-系统/scripts/cli/harvest-lib.mjs"
+    },
+    {
+      "source": "scripts/cli/observe.mjs",
+      "target": "00-系统/scripts/cli/observe.mjs"
+    },
+    {
+      "source": "scripts/cli/vault-lint.mjs",
+      "target": "00-系统/scripts/cli/vault-lint.mjs"
+    },
+    {
+      "source": "scripts/daemon/brain-clip-handler.mjs",
+      "target": "00-系统/scripts/daemon/brain-clip-handler.mjs"
+    },
+    {
+      "source": "scripts/daemon/brain-watch-handler.mjs",
+      "target": "00-系统/scripts/daemon/brain-watch-handler.mjs"
+    },
+    {
+      "source": "scripts/daemon/brain-watch.mjs",
+      "target": "00-系统/scripts/daemon/brain-watch.mjs"
+    },
+    {
+      "source": "scripts/lib/clip-utils.mjs",
+      "target": "00-系统/scripts/lib/clip-utils.mjs"
+    },
+    {
+      "source": "scripts/lib/plist-render.mjs",
+      "target": "00-系统/scripts/lib/plist-render.mjs"
+    },
+    {
+      "source": "scripts/lib/brainkit-conf.mjs",
+      "target": "00-系统/scripts/lib/brainkit-conf.mjs"
+    }
+  ]
+}
