@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "type": "experience",
+      "path": "03-经验/",
+      "scope": "global"
+    },
+    {
+      "type": "project",
+      "path": "01-项目/{project-name}/",
+      "scope": "project"
+    }
+  ],
+  "section_policies": {
+    "01-项目/": {
+      "policy": "bind_to_project",
+      "requires_subfolder": true,
+      "new_subfolder_policy": "deny"
+    },
+    "03-经验/": {
+      "policy": "allowlist",
+      "requires_subfolder": true,
+      "allowed_subfolders": [
+        "example-topic"
+      ]
+    }
+  },
+  "inbox_root": "99-inbox/",
+  "inbox_subfolders": {
+    "01-项目/": "99-inbox/projects/",
+    "03-经验/": "99-inbox/experience/"
+  },
+  "exempt_files": []
+}
